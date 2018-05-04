@@ -8,14 +8,60 @@
     </script>
   </head>
   <body>
-    <div class="header">
+    <header id='main-header'>
       <h1>Learning Javascript</h1>
       <p>With Me</p>
-    </div>
+    </header>
+
 
     <div class="container">
-      <script type="text/javascript">
 
+      <section>
+        <p> This is a fun page of various notable and advanced Javascript functions and capabilities.
+        </p>
+      </section>
+
+      <section>
+        <h3> Variables </h3>
+        <p>
+            Variables are case sensitive.
+            Can only contain with letters, numers, underscores, dollar signs.
+            Can begin with a letter, _ and $.
+
+        </p>
+      </section>
+
+      <section>
+        <h3>For each loops</h3>
+        <p> foreach loops are designed to work with arrays. </p>
+        <code class="code-block">
+  var numbers = [33,54,76,34,2,6];
+  numbers.foreach(function(number) {
+    console.log(number);
+  });
+        </code>
+        <p>Output:</p>
+        <samp class="samp-block"> 33 54 76 34 2 6 </samp>
+
+        <p>This is equivalent to:</p>
+        <code class="code-block">
+          var numbers = [33,54,76,34,2,6];
+          numbers.foreach(function(number) {
+            console.log(number);
+          });
+                </code>
+                <p>Output:</p>
+                <samp class="samp-block"> 33 54 76 34 2 6 </samp>
+        </code>
+      </section>
+
+      <section>
+        <h3>Contidionals</h3>
+        <p> Triple '===' is to compare both value and data type</p>
+
+      </section>
+
+      <script type="text/javascript">
 /*
         // Variables
         // variables are case sensitive.
@@ -37,11 +83,17 @@
 
         // Arrays
         var colors = ['red', 'blue', 'green'];
-        alert(colors[1]);
+        console.log(colors[1]);
 
-        var colorsArray = new Array('red', 'blue', 'green');
-        
+
+        var colorsArray = new Array('red', 'blue', 'orange');
+        colorsArray[3] = 'green';
+        colorsArray.push('purple');
+        console.log(colorsArray);
+
       </script>
+
+    <!-- ./container -->
     </div>
 
   </body>
